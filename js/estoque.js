@@ -7,18 +7,51 @@ email_aluno: pedro.martins55@aluno.cps.sp.gov.br
 turma: A1129-N-D.S.M.-312-20262
 */
 
-if (sessionStorage.getItem("usuario") == null) {
-    window.location.href = "index.html";
-}
-
 var pesquisa = document.getElementById("pesquisa");
 var categoria = document.getElementById("categoria");
 var resultado = document.getElementById("resultado");
-var linhas = document.querySelectorAll("#tabelaEstoque tbody tr");
+var corpoTabela = document.getElementById("corpoTabela");
+
+function criarCelula(linha, texto) {
+    var celula = document.createElement("td");
+    celula.textContent = texto;
+    linha.appendChild(celula);
+    return celula;
+}
+
+function montarTabela() {
+    var produtos = carregarProdutos();
+
+    for (var i = 0; i < produtos.length; i++) {
+        var produto = produtos[i];
+        var linha = document.createElement("tr");
+
+        var imagem = document.createElement("img");
+        imagem.src = "img/produtos/" + produto.imagem;
+        imagem.alt = produto.nome;
+        imagem.width = 40;
+        imagem.height = 40;
+        criarCelula(linha, "").appendChild(imagem);
+
+        criarCelula(linha, produto.codigo);
+        criarCelula(linha, produto.nome);
+        criarCelula(linha, produto.categoria);
+        criarCelula(linha, produto.quantidade + " " + produto.unidade);
+        criarCelula(linha, formatarPreco(produto.preco));
+
+        var situacao = document.createElement("span");
+        situacao.className = "situacao " + classeSituacao(produto.quantidade);
+        situacao.textContent = textoSituacao(produto.quantidade);
+        criarCelula(linha, "").appendChild(situacao);
+
+        corpoTabela.appendChild(linha);
+    }
+}
 
 function filtrarTabela() {
     var termo = pesquisa.value.toLowerCase();
     var categoriaEscolhida = categoria.value;
+    var linhas = corpoTabela.querySelectorAll("tr");
     var encontrados = 0;
 
     for (var i = 0; i < linhas.length; i++) {
@@ -50,3 +83,6 @@ document.getElementById("formPesquisa").addEventListener("submit", function (eve
     event.preventDefault();
     filtrarTabela();
 });
+
+montarTabela();
+filtrarTabela();

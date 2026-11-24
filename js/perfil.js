@@ -13,6 +13,8 @@ if (usuario == null) {
     window.location.href = "index.html";
 } else {
     document.getElementById("nomeUsuario").textContent = usuario;
+    document.getElementById("nomeCompleto").textContent = sessionStorage.getItem("nome");
+    document.getElementById("emailUsuario").textContent = sessionStorage.getItem("email");
 }
 
 function mostrarMensagem(texto, tipo) {
