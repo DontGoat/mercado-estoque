@@ -215,6 +215,36 @@ footer p {
     color: #666666;
 }
 
+.escondido {
+    display: none;
+}
+
+.trocar {
+    margin: 15px 0 0 0;
+}
+
+.trocar a {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.info-produto {
+    margin: 10px 0 0 0;
+    padding: 8px;
+    background-color: #f1f8e9;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.botao-secundario {
+    width: auto;
+    background-color: #ff9800;
+}
+
+.botao-secundario:hover {
+    background-color: #e68900;
+}
+
 .acesso-teste {
     margin-top: 20px;
     padding: 10px;
@@ -228,14 +258,14 @@ footer p {
     margin: 3px 0;
 }
 
-.perfil-grid {
+.duas-colunas {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     align-items: flex-start;
 }
 
-.perfil-grid .cartao {
+.duas-colunas .cartao {
     flex: 1;
     min-width: 280px;
 }
