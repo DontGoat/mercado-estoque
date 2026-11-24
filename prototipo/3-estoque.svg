@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="Arial">
+<rect width="800" height="520" fill="#f4f4f4"/>
+<rect width="800" height="60" fill="#2e7d32"/>
+<circle cx="45" cy="30" r="18" fill="#ddd"/><text x="75" y="36" font-size="16" font-weight="bold" fill="#fff">Cesta Cheia Estoque</text>
+<text x="555" y="35" font-size="12" text-anchor="middle" fill="#fff">Perfil</text>
+<rect x="605" y="18" width="70" height="24" rx="4" fill="#fff"/><text x="640" y="35" font-size="12" text-anchor="middle" fill="#2e7d32">Estoque</text><text x="720" y="35" font-size="12" text-anchor="middle" fill="#fff">Sair</text>
+<text x="60" y="95" font-size="20" font-weight="bold" fill="#2e7d32">Consulta de Estoque</text>
+<rect x="60" y="110" width="680" height="335" rx="8" fill="#fff"/>
+<text x="85" y="140" font-size="11" font-weight="bold" fill="#333">Pesquisar produto</text><rect x="85" y="147" width="400" height="28" rx="4" fill="#fff" stroke="#bbb"/><text x="95" y="166" font-size="11" fill="#aaa">Nome, código ou situação</text>
+<text x="505" y="140" font-size="11" font-weight="bold" fill="#333">Categoria</text><rect x="505" y="147" width="210" height="28" rx="4" fill="#fff" stroke="#bbb"/><text x="515" y="166" font-size="11" fill="#aaa">Todas ▾</text>
+<text x="85" y="198" font-size="11" fill="#777">12 produto(s) encontrado(s).</text>
+<rect x="85" y="210" width="630" height="28" fill="#2e7d32"/>
+<g font-size="11" fill="#fff"><text x="95" y="228">Imagem</text><text x="165" y="228">Código</text><text x="235" y="228">Produto</text><text x="355" y="228">Categoria</text><text x="455" y="228">Quantidade</text><text x="545" y="228">Preço</text><text x="625" y="228">Situação</text></g>
+<g fill="#f1f8e9"><rect x="85" y="273" width="630" height="35" opacity=".8"/><rect x="85" y="343" width="630" height="35" opacity=".8"/></g>
+<g fill="#ddd"><rect x="95" y="244" width="24" height="24"/><rect x="95" y="279" width="24" height="24"/><rect x="95" y="314" width="24" height="24"/><rect x="95" y="349" width="24" height="24"/><rect x="95" y="384" width="24" height="24"/></g>
+<g fill="#ccc"><rect x="165" y="252" width="40" height="8"/><rect x="235" y="252" width="90" height="8"/><rect x="355" y="252" width="70" height="8"/><rect x="455" y="252" width="50" height="8"/><rect x="545" y="252" width="50" height="8"/>
+<rect x="165" y="287" width="40" height="8"/><rect x="235" y="287" width="90" height="8"/><rect x="355" y="287" width="70" height="8"/><rect x="455" y="287" width="50" height="8"/><rect x="545" y="287" width="50" height="8"/>
+<rect x="165" y="322" width="40" height="8"/><rect x="235" y="322" width="90" height="8"/><rect x="355" y="322" width="70" height="8"/><rect x="455" y="322" width="50" height="8"/><rect x="545" y="322" width="50" height="8"/>
+<rect x="165" y="357" width="40" height="8"/><rect x="235" y="357" width="90" height="8"/><rect x="355" y="357" width="70" height="8"/><rect x="455" y="357" width="50" height="8"/><rect x="545" y="357" width="50" height="8"/>
+<rect x="165" y="392" width="40" height="8"/><rect x="235" y="392" width="90" height="8"/><rect x="355" y="392" width="70" height="8"/><rect x="455" y="392" width="50" height="8"/><rect x="545" y="392" width="50" height="8"/></g>
+<rect x="625" y="247" width="70" height="16" rx="8" fill="#c8e6c9"/><rect x="625" y="282" width="70" height="16" rx="8" fill="#ffe0b2"/><rect x="625" y="317" width="70" height="16" rx="8" fill="#c8e6c9"/><rect x="625" y="352" width="70" height="16" rx="8" fill="#ffcdd2"/><rect x="625" y="387" width="70" height="16" rx="8" fill="#c8e6c9"/>
+<rect x="0" y="470" width="800" height="50" fill="#333"/><text x="400" y="500" font-size="12" text-anchor="middle" fill="#fff">RODAPÉ</text>
+<text x="10" y="515" font-size="10" fill="#999">Wireframe 3 - Consulta de Estoque</text>
+</svg>

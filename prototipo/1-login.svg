@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="Arial">
+<rect width="800" height="520" fill="#2e7d32"/>
+<rect x="250" y="40" width="300" height="400" rx="8" fill="#fff"/>
+<circle cx="400" cy="95" r="35" fill="#ddd"/><text x="400" y="100" font-size="11" text-anchor="middle" fill="#777">LOGO</text>
+<text x="400" y="155" font-size="20" font-weight="bold" text-anchor="middle" fill="#2e7d32">Cesta Cheia</text>
+<text x="400" y="175" font-size="12" text-anchor="middle" fill="#777">Sistema de Estoque</text>
+<text x="275" y="205" font-size="12" font-weight="bold" fill="#333">E-mail</text>
+<rect x="275" y="212" width="250" height="30" rx="4" fill="#fff" stroke="#bbb"/>
+<text x="275" y="265" font-size="12" font-weight="bold" fill="#333">Senha</text>
+<rect x="275" y="272" width="250" height="30" rx="4" fill="#fff" stroke="#bbb"/>
+<rect x="275" y="320" width="250" height="34" rx="5" fill="#2e7d32"/><text x="400" y="342" font-size="13" text-anchor="middle" fill="#fff">ENTRAR</text>
+<rect x="275" y="370" width="250" height="50" rx="5" fill="#fff3e0" stroke="#ff9800" stroke-dasharray="4"/><text x="400" y="400" font-size="11" text-anchor="middle" fill="#777">Acesso de teste</text>
+<rect x="0" y="470" width="800" height="50" fill="#333"/><text x="400" y="500" font-size="12" text-anchor="middle" fill="#fff">RODAPÉ</text>
+<text x="10" y="20" font-size="12" fill="#fff">Wireframe 1 - Tela de Login</text>
+</svg>
