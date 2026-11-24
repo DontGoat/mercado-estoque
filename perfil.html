@@ -1,0 +1,105 @@
+<!--
+Descricao: Situação de Aprendizagem 02 - Sistema de Estoque (Mercado Cesta Cheia)
+nome_arquivo: perfil.html
+nome_exercicio: Situação de Aprendizagem 02 - Login, Perfil e Consulta
+nome_aluno: Pedro Henrique de Sousa Martins
+email_aluno: pedro.martins55@aluno.cps.sp.gov.br
+turma: A1129-N-D.S.M.-312-20262
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesta Cheia Estoque - Perfil</title>
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="marca">
+            <img src="img/logo.svg" alt="Logo do Mercado Cesta Cheia" width="45" height="45">
+            <span>Cesta Cheia <small>Estoque</small></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="perfil.html" class="ativo">Perfil</a></li>
+                <li><a href="estoque.html">Estoque</a></li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Olá, <span id="nomeUsuario">Pedro</span>!</h1>
+
+        <div class="perfil-grid">
+            <section class="cartao perfil">
+                <img src="img/avatar.webp" alt="Foto de perfil de Pedro Henrique" class="avatar" width="120" height="120">
+                <h2>Pedro Henrique de Sousa Martins</h2>
+                <p class="cargo">Auxiliar de Estoque</p>
+
+                <dl class="dados">
+                    <dt>Matrícula</dt>
+                    <dd>2026-0147</dd>
+                    <dt>E-mail</dt>
+                    <dd>pedro@cestacheia.com</dd>
+                    <dt>Setor</dt>
+                    <dd>Depósito</dd>
+                    <dt>Turno</dt>
+                    <dd id="turnoAtual">Noite</dd>
+                    <dt>Telefone</dt>
+                    <dd id="telefoneAtual">(11) 98765-4321</dd>
+                    <dt>Admissão</dt>
+                    <dd>02/02/2026</dd>
+                </dl>
+
+                <a href="estoque.html" class="botao">Consultar estoque</a>
+            </section>
+
+            <section class="cartao">
+                <h2>Atualizar dados</h2>
+
+                <form id="formPerfil" novalidate>
+                    <fieldset>
+                        <legend>Contato</legend>
+
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" maxlength="15" placeholder="(XX) XXXXX-XXXX" autocomplete="tel">
+
+                        <label for="turno">Turno</label>
+                        <select id="turno" name="turno">
+                            <option value="">Selecione o turno</option>
+                            <option value="Manhã">Manhã</option>
+                            <option value="Tarde">Tarde</option>
+                            <option value="Noite">Noite</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Alterar senha</legend>
+
+                        <label for="novaSenha">Nova senha</label>
+                        <input type="password" id="novaSenha" name="novaSenha" placeholder="Mínimo 6 caracteres" autocomplete="new-password">
+
+                        <label for="confirmarSenha">Confirmar senha</label>
+                        <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Repita a senha" autocomplete="new-password">
+                    </fieldset>
+
+                    <p id="mensagem" class="mensagem" aria-live="polite"></p>
+
+                    <button type="submit">Salvar alterações</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mercado Cesta Cheia - Sistema interno</p>
+        <p>Desenvolvido por Pedro Henrique de Sousa Martins - DSM</p>
+    </footer>
+
+    <script src="js/perfil.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!--
+Descricao: Situação de Aprendizagem 02 - Sistema de Estoque (Mercado Cesta Cheia)
+nome_arquivo: estoque.html
+nome_exercicio: Situação de Aprendizagem 02 - Login, Perfil e Consulta
+nome_aluno: Pedro Henrique de Sousa Martins
+email_aluno: pedro.martins55@aluno.cps.sp.gov.br
+turma: A1129-N-D.S.M.-312-20262
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesta Cheia Estoque - Consulta</title>
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="marca">
+            <img src="img/logo.svg" alt="Logo do Mercado Cesta Cheia" width="45" height="45">
+            <span>Cesta Cheia <small>Estoque</small></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="estoque.html" class="ativo">Estoque</a></li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Consulta de Estoque</h1>
+
+        <section class="cartao">
+            <form id="formPesquisa" class="filtros" role="search">
+                <div class="campo">
+                    <label for="pesquisa">Pesquisar produto</label>
+                    <input type="search" id="pesquisa" name="pesquisa" placeholder="Nome, código ou situação">
+                </div>
+
+                <div class="campo">
+                    <label for="categoria">Categoria</label>
+                    <select id="categoria" name="categoria">
+                        <option value="">Todas</option>
+                        <option value="Hortifruti">Hortifruti</option>
+                        <option value="Mercearia">Mercearia</option>
+                        <option value="Laticínios">Laticínios</option>
+                        <option value="Padaria">Padaria</option>
+                    </select>
+                </div>
+            </form>
+
+            <p id="resultado" class="resultado" aria-live="polite">12 produto(s) encontrado(s).</p>
+
+            <div class="tabela-container">
+                <table id="tabelaEstoque">
+                    <caption>Produtos cadastrados no estoque</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Imagem</th>
+                            <th scope="col">Código</th>
+                            <th scope="col">Produto</th>
+                            <th scope="col">Categoria</th>
+                            <th scope="col">Quantidade</th>
+                            <th scope="col">Preço</th>
+                            <th scope="col">Situação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="img/produtos/maca.svg" alt="Maçã" width="40" height="40"></td>
+                            <td>001</td>
+                            <td>Maçã</td>
+                            <td>Hortifruti</td>
+                            <td>120 kg</td>
+                            <td>R$ 8,99</td>
+                            <td><span class="situacao ok">Em estoque</span></td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/produtos/banana.svg" alt="Banana" width="40" height="40"></td>
+                            <td>002</td>
+                            <td>Banana</td>
+                            <td>Hortifruti</td>
+                            <td>15 kg</td>
+                            <td>R$ 5,49</td>
+                            <td><span class="situacao baixo">Estoque baixo</span></td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/produtos/tomate.svg" alt="Tomate" width="40" height="40"></td>
+                            <td>003</td>
+                            <td>Tomate</td>
+                            <td>Hortifruti</td>
+                            <td>80 kg</td>
+                            <td>R$ 7,49</td>
+                            <td><span class="situacao ok">Em estoque</span></td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/produtos/cenoura.svg" alt="Cenoura" width="40" height="40"></td>
+                            <td>004</td>
+                            <td>Cenoura</td>
+                            <td>Hortifruti</td>
+                            <td>0 kg</td>
+                            <td>R$ 4,99</td>
+                            <td><span class="situacao esgotado">Esgotado</span></td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/produtos/arroz.svg" alt="Pacote de arroz" width="40" height="40"></td>
+                            <td>005</td>
+                            <td>Arroz 5 kg</td>
+                            <td>Mercearia</td>
+                            <td>45 un</td>
+                            <td>R$ 27,90</td>
+                            <td><span class="situacao ok">Em estoque</span></td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/produtos/feijao.svg" alt="Pacote de feijão" width="40" height="40"></td>
+                            <td>006</td>
+                            <td>Feijão 1 kg</td>
+                            <td>Mercearia</td>
+                            <td>8 un</td>
+                            <td>R$ 8,49</td>
+                            <td><span class="situacao baixo">Estoque baixo</span></td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/produtos/cafe.svg" alt="Pacote de café" width="40" height="40"></td>
+                            <td>007</td>
+                            <td>Café 500 g</td>
+                            <td>Mercearia</td>
+                            <td>30 un</td>
+                            <td>R$ 18,90</td>
+                            <td><span class="situacao ok">Em estoque</span></td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/produtos/acucar.svg" alt="Pacote de açúcar" width="40" height="40"></td>
+                            <td>008</td>
+                            <td>Açúcar 1 kg</td>
+                            <td>Mercearia</td>
+                            <td>0 un</td>
+                            <td>R$ 4,79</td>
+                            <td><span class="situacao esgotado">Esgotado</span></td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/produtos/ovos.svg" alt="Bandeja de ovos" width="40" height="40"></td>
+                            <td>009</td>
+                            <td>Ovos (dúzia)</td>
+                            <td>Mercearia</td>
+                            <td>25 un</td>
+                            <td>R$ 12,90</td>
+                            <td><span class="situacao ok">Em estoque</span></td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/produtos/leite.svg" alt="Caixa de leite" width="40" height="40"></td>
+                            <td>010</td>
+                            <td>Leite Integral 1 L</td>
+                            <td>Laticínios</td>
+                            <td>60 un</td>
+                            <td>R$ 4,79</td>
+                            <td><span class="situacao ok">Em estoque</span></td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/produtos/queijo.svg" alt="Pedaço de queijo" width="40" height="40"></td>
+                            <td>011</td>
+                            <td>Queijo Mussarela</td>
+                            <td>Laticínios</td>
+                            <td>6 kg</td>
+                            <td>R$ 44,90</td>
+                            <td><span class="situacao baixo">Estoque baixo</span></td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/produtos/pao.svg" alt="Pão francês" width="40" height="40"></td>
+                            <td>012</td>
+                            <td>Pão Francês</td>
+                            <td>Padaria</td>
+                            <td>200 un</td>
+                            <td>R$ 0,75</td>
+                            <td><span class="situacao ok">Em estoque</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mercado Cesta Cheia - Sistema interno</p>
+        <p>Desenvolvido por Pedro Henrique de Sousa Martins - DSM</p>
+    </footer>
+
+    <script src="js/estoque.js"></script>
+</body>
+</html>
