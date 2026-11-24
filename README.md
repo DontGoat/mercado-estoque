@@ -66,6 +66,19 @@ Antes da programação, as telas foram planejadas em wireframes (pasta `prototip
 
 Todas as imagens têm `width`, `height` e texto alternativo (`alt`).
 
+## Origem das imagens
+
+Nenhuma imagem foi baixada da internet. Todas foram criadas especialmente para os projetos do Mercado Cesta Cheia, então não há uso de imagens de terceiros nem problema de direitos autorais.
+
+| Imagem | Arquivo | Origem | Como foi feita |
+|--------|---------|--------|----------------|
+| Logo (sacola) | `img/logo.svg` | Reaproveitada do projeto [mercado-delivery](https://github.com/DontGoat/mercado-delivery) (SA01), com o texto trocado para "ESTOQUE" | Desenhada em código SVG |
+| Maçã, banana, tomate, cenoura, arroz, ovos, leite e pão | `img/produtos/` | Reaproveitadas do projeto [mercado-delivery](https://github.com/DontGoat/mercado-delivery) (SA01) | Desenhadas em código SVG |
+| Feijão, café, açúcar e queijo | `img/produtos/` | Criadas para este projeto, no mesmo estilo das anteriores | Desenhadas em código SVG |
+| Caixa (produto sem imagem) | `img/produtos/sem-imagem.svg` | Criada para este projeto | Desenhada em código SVG |
+| Foto de perfil | `img/avatar.webp` | Ilustração criada para este projeto | Desenhada com Python (biblioteca Pillow) em PNG 960x960 e convertida para WebP 240x240 |
+| Wireframes | `prototipo/` | Criados para este projeto | Desenhados em código SVG |
+
 ## Usabilidade e acessibilidade
 
 - Todo campo tem `label` ligado pelo `for`.
