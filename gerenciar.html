@@ -1,0 +1,111 @@
+<!--
+Descricao: Situação de Aprendizagem 02 - Sistema de Estoque (Mercado Cesta Cheia)
+nome_arquivo: gerenciar.html
+nome_exercicio: Situação de Aprendizagem 02 - Login, Perfil e Consulta
+nome_aluno: Pedro Henrique de Sousa Martins
+email_aluno: pedro.martins55@aluno.cps.sp.gov.br
+turma: A1129-N-D.S.M.-312-20262
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesta Cheia Estoque - Gerenciar</title>
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="marca">
+            <img src="img/logo.svg" alt="Logo do Mercado Cesta Cheia" width="45" height="45">
+            <span>Cesta Cheia <small>Estoque</small></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="estoque.html">Estoque</a></li>
+                <li><a href="gerenciar.html" class="ativo">Gerenciar</a></li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Gerenciar Estoque</h1>
+
+        <div class="duas-colunas">
+            <section class="cartao">
+                <h2>Atualizar produto</h2>
+
+                <form id="formAtualizar" novalidate>
+                    <label for="produtoSelecionado">Produto</label>
+                    <select id="produtoSelecionado" name="produtoSelecionado"></select>
+
+                    <p id="infoProduto" class="info-produto"></p>
+
+                    <label for="quantidadeAdicionar">Quantidade a adicionar</label>
+                    <input type="number" id="quantidadeAdicionar" name="quantidadeAdicionar" min="0" placeholder="Ex: 10">
+
+                    <label for="novoPreco">Novo preço (R$)</label>
+                    <input type="number" id="novoPreco" name="novoPreco" min="0" step="0.01" placeholder="Deixe vazio para manter o preço">
+
+                    <p id="msgAtualizar" class="mensagem" aria-live="polite"></p>
+
+                    <button type="submit">Atualizar produto</button>
+                </form>
+            </section>
+
+            <section class="cartao">
+                <h2>Novo produto</h2>
+
+                <form id="formNovo" novalidate>
+                    <label for="nomeProduto">Nome</label>
+                    <input type="text" id="nomeProduto" name="nomeProduto" placeholder="Ex: Macarrão 500 g">
+
+                    <label for="categoriaProduto">Categoria</label>
+                    <select id="categoriaProduto" name="categoriaProduto">
+                        <option value="">Selecione a categoria</option>
+                        <option value="Hortifruti">Hortifruti</option>
+                        <option value="Mercearia">Mercearia</option>
+                        <option value="Laticínios">Laticínios</option>
+                        <option value="Padaria">Padaria</option>
+                    </select>
+
+                    <label for="unidadeProduto">Unidade</label>
+                    <select id="unidadeProduto" name="unidadeProduto">
+                        <option value="un">Unidade (un)</option>
+                        <option value="kg">Quilo (kg)</option>
+                    </select>
+
+                    <label for="quantidadeProduto">Quantidade</label>
+                    <input type="number" id="quantidadeProduto" name="quantidadeProduto" min="0" placeholder="Ex: 50">
+
+                    <label for="precoProduto">Preço (R$)</label>
+                    <input type="number" id="precoProduto" name="precoProduto" min="0" step="0.01" placeholder="Ex: 6.90">
+
+                    <p id="msgNovo" class="mensagem" aria-live="polite"></p>
+
+                    <button type="submit">Cadastrar produto</button>
+                </form>
+            </section>
+        </div>
+
+        <section class="cartao">
+            <h2>Restaurar estoque</h2>
+            <p>Volta a lista de produtos para os dados iniciais do sistema.</p>
+            <button type="button" id="btnRestaurar" class="botao-secundario">Restaurar estoque inicial</button>
+            <p id="msgRestaurar" class="mensagem" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mercado Cesta Cheia - Sistema interno</p>
+        <p>Desenvolvido por Pedro Henrique de Sousa Martins - DSM</p>
+    </footer>
+
+    <script src="js/produtos.js"></script>
+    <script src="js/gerenciar.js"></script>
+</body>
+</html>

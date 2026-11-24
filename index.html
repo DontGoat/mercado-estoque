@@ -33,11 +33,37 @@ turma: A1129-N-D.S.M.-312-20262
 
             <button type="submit">Entrar</button>
 
+            <p class="trocar">Não tem conta? <a href="#" id="abrirCadastro">Cadastre-se</a></p>
+
             <div class="acesso-teste">
                 <p><strong>Acesso de teste</strong></p>
                 <p>E-mail: pedro@cestacheia.com</p>
                 <p>Senha: 123456</p>
             </div>
+        </form>
+
+        <form id="formCadastro" class="cartao login escondido" novalidate>
+            <img src="img/logo.svg" alt="Logo do Mercado Cesta Cheia" class="login-logo" width="90" height="90">
+            <h1>Criar conta</h1>
+            <p class="subtitulo">Cadastro de funcionário</p>
+
+            <label for="nomeCadastro">Nome completo</label>
+            <input type="text" id="nomeCadastro" name="nomeCadastro" placeholder="Digite seu nome" autocomplete="name" required>
+
+            <label for="emailCadastro">E-mail</label>
+            <input type="email" id="emailCadastro" name="emailCadastro" placeholder="seuemail@cestacheia.com" autocomplete="email" required>
+
+            <label for="senhaCadastro">Senha</label>
+            <input type="password" id="senhaCadastro" name="senhaCadastro" placeholder="Mínimo 6 caracteres" autocomplete="new-password" required>
+
+            <label for="confirmarCadastro">Confirmar senha</label>
+            <input type="password" id="confirmarCadastro" name="confirmarCadastro" placeholder="Repita a senha" autocomplete="new-password" required>
+
+            <p id="mensagemCadastro" class="mensagem" aria-live="polite"></p>
+
+            <button type="submit">Cadastrar</button>
+
+            <p class="trocar">Já tem conta? <a href="#" id="abrirLogin">Entrar</a></p>
         </form>
     </main>
 
